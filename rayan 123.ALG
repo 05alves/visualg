@@ -3,24 +3,34 @@ Algoritmo "semnome"
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 21/11/2022
+// Data atual  : 30/11/2022
 Var
 // Seção de Declarações das variáveis 
-idade, temposerv: inteiro
-portnecesp: logico
+limite: inteiro
+numero: inteiro
+maior: inteiro
+menor: inteiro
+
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-escreva("digite sua idade: ")
-leia(idade)
-escreva("digite seu tempo de serviço: ")
-leia(temposerv)
-escreval("voce e portado de portnecesp.")
-leia(portnecesp)
-se((idade>=60) e (temposerv>=30) ou (portnecesp=verdadeiro)) entao
-escreval("vc pode aposentar, se ainda estiver vivo.")
-senao
-escreval("vai progamar")
+enquanto (limite<5) faca
+limite <- limite+1
+escreva("digite um numero: ")
+leia(numero)
+se menor= 0 entao
+menor <- numero
 fimse
+se (numero < menor) entao
+menor <- numero
+senao
+se (numero> maior) entao
+maior <- numero
+fimse
+ fimse
+ fimenquanto
+ 
+ escreval("o maior numero sera: ",maior)
+ escreval("o menor numero sera: ",menor)
 
 Fimalgoritmo
